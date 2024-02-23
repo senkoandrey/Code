@@ -1,0 +1,18 @@
+var elementsToShow = document.querySelectorAll('[tt-show-only-on]');
+
+  elementsToShow.forEach(function(element) {
+    var targetUrlPart = element.getAttribute('tt-show-only-on');
+    if (!currentPageUrl.includes(targetUrlPart)) {
+      element.style.display = 'none'; // or any other display value you want
+    }
+  });
+
+  // Show everywhere but on pages with attribute 'td-show-only-on'
+  var elementsToHide = document.querySelectorAll('[tt-dont-show-on]');
+
+  elementsToHide.forEach(function(element) {
+    var targetUrlPart = element.getAttribute('tt-dont-show-on');
+    if (currentPageUrl.includes(targetUrlPart)) {
+      element.style.display = 'none'; // or any other display value you want
+    }
+  });

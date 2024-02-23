@@ -1,0 +1,5 @@
+Code will copy to clipboard URL plus ID of element clicked.
+Element should have custom attributes
+Name 'tt-copy-url'
+Value 'current-url-id'
+Code will not notify user that URL was copied and will not change any element on the page.

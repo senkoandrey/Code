@@ -1,0 +1,2 @@
+The code will offset anchored element by -150 px and add combo class 'current' to the element with respective ID.
+This class should be styled in Webflow.

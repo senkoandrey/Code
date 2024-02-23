@@ -1,0 +1,14 @@
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetElement = document.querySelector(hash);
+      if (targetElement) {
+        // Add 'current' class to the targeted element
+        targetElement.classList.add('current');
+        setTimeout(() => {
+          targetElement.scrollIntoView();
+          window.scrollBy(0, -150); // Adjust this value to account for the fixed header
+        }, 0);
+      }
+    }
+  });

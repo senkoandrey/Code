@@ -1,0 +1,5 @@
+Code will 
+1. Show blocks only on specific URLs that contain part of text determnined in 
+custom attribute Name: tt-show-only-on and Value: must be a part of URL
+2. Don't show block on specific URL. Custom attributes
+Name: 'tt-dont-show-on' and Value: must be a part of URL
